@@ -1,0 +1,456 @@
+@font-face {
+    font-family: "Alike-Regular";
+    src: url(../fonts/Alike-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "BebasNeue-Regular";
+    src: url(../fonts/BebasNeue-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-oreng: #FF5C00;
+    --color-blac: #000000;
+    --color-grau: #D8D8D8;
+    --color-niz-grau: #E8E8E8;
+    --color-icons: #616161;
+    --color-whtte: #ffff;
+    --font-Alike-Regular:"Alike-Regular";
+    --font-Montserrat-Regular:"Montserrat-Regular";
+    --font-Montserrat-Bold:"Montserrat-Bold";
+}
+
+header header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    padding: 5px 250px;
+    align-items: center;
+}
+
+header header div.logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+}
+
+header header div.logo span {
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+header header nav  {
+    justify-self: end;
+}
+
+header header nav ul {
+    display: flex;
+    column-gap: 40px;
+    justify-items: end;
+}
+
+header header nav ul li {
+    list-style-type: none;
+}
+
+header header nav ul li a {
+    text-decoration: none;
+    color: var(--color-blac);
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+header header div {
+    display: grid;
+    justify-self: end;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+header footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    padding: 30px 250px;
+    align-items: center;
+}
+
+header footer p {
+    border: 1px solid var(--color-oreng);
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-oreng);
+    text-align: center;
+    border-radius: 5px;
+    width: 100px;
+}
+
+header footer div.poisk  {
+    display: grid;
+    grid-template-columns: 1fr 24px;
+    
+}
+
+header footer div.obrat {
+    color: var(--color-blac);
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+header footer div.poisk input {
+    border: 0;
+    border-bottom: 1px solid var(--color-grau);
+}
+
+header footer div.obrat {
+    justify-self: end;
+}
+
+section.slider {
+    margin-top: 30px; 
+    background-image: url(../images/fon-black-figury-linii-ugly-fon-chiornyi-lines\ 1.jpg);
+    border-radius: 5px;
+    height: 262px; 
+    margin-left: 250px;
+    margin-right: 250px;
+    display: grid;
+}
+
+section.slider img {
+    position: relative;
+    bottom: 220px;
+    left: 400px;
+}
+
+section.slider h1 {
+    color: var(--color-whtte);
+    font-family: "BebasNeue-Regular";
+    font-weight: 400;
+    font-size: 40px;
+
+}
+
+section.slider h2 {
+    color: var(--color-whtte);
+    font-family: "BebasNeue-Regular";
+    font-weight: 400;
+    font-size: 24px;
+}
+
+section.slider p {
+    color: var(--color-whtte);
+    font-family: "BebasNeue-Regular";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+section.slider div {
+    padding-top: 60px;
+    padding-left: 210px;
+}
+
+section.slider div.tuda {
+    display: grid;
+    grid-template-columns: repeat(2, 20px);
+    column-gap: 25px;
+    justify-self: end;
+    padding-right: 12px;
+    padding-top: 0.01px;
+}
+
+main div h3 {
+    padding-top: 30px;
+    padding-left: 250px;
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+main section.prodaja  {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 30px;
+    text-align: center;
+    column-gap: 20px;
+}
+
+main section.prodaja article:hover {
+    transform: scale(1.05);
+    transition: all 0.8s;
+}
+
+main section.prodaja article:nth-child(1) {
+    background-color: var(--color-grau);
+    border-radius: 5px;
+    
+}
+
+main section.prodaja article:nth-child(2) {
+    background-color: var(--color-grau);
+    border-radius: 5px;
+    padding-top: 15px;
+}
+
+main section.prodaja article:nth-child(3) {
+    background-color: var(--color-grau);
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+main section.prodaja article:nth-child(4) {
+    background-color: var(--color-grau);
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+main section.prodaja article:nth-child(5) {
+    background-color: var(--color-grau);
+    border-radius: 3px;
+    padding-top: 8px;
+}
+
+main section.prodaja article:nth-child(6) {
+    background-color: var(--color-grau);
+    border-radius: 5px;
+}
+
+main section.prodaja article p {
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-style: 16px;
+}
+
+main section.prodaja article svg {
+    justify-self: center;
+}
+
+main section.prodaja article a {
+    text-decoration: none;
+    color: var(--color-blac);
+    cursor: pointer;
+}
+
+
+main section.skidki {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 30px;
+    column-gap: 20px;
+}
+
+main section.skidki div.mahina {
+    background-image: url(../images/featured\ 1.png);
+    height: 170px;
+    border-radius: 5px;
+    display: flex;
+}
+
+main section.skidki div.mahina h2 {
+    display: grid;
+    text-align: center;
+    color: var(--color-whtte);
+    padding-top: 34px;
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 22px;
+}
+
+main section.skidki div.mahina p {
+    color: var(--color-whtte);
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+main section.skidki div.mahina img {
+    padding-right: 100px;
+}
+
+main section.skidki div {
+    background-image: url(../images/1660167717_4-funart-pro-p-tsifrovoi-mir-fon-krasivo-4\ 1.png);
+    height: 170px;
+    border-radius: 5px;
+    display: flex;
+}
+
+main section.skidki div article {
+    display: grid;
+    justify-items: start;
+}
+
+main section.skidki div article h2 {
+    color: var(--color-whtte);
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 22px;
+}
+
+main section.skidki div article span  {
+    height: 30px;
+    color: var(--color-blac);
+    background-color: var(--color-whtte);
+    padding-top: 5px;
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+main section.skidki div article p {
+    display: grid;
+    color: var(--color-whtte);
+    text-align: center;
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+main section.skidki div img {
+    padding-left: 34px;
+
+}
+
+main section.news {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-image: url(../images/cifra.png);
+    margin-top: 30px;
+    height: 170px;
+    margin-left: 250px;
+    margin-right: 250px;
+    column-gap: 50px;
+    border-radius: 5px;
+}
+
+main section.news nav ul li {
+    color: var(--color-whtte);
+    list-style-type: none;
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+main section.news nav ul li.ko {
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+main section.news nav ul li {
+    padding-bottom: 8px;
+}
+
+main section.news nav ul li a {
+    text-decoration: none;
+    color: var(--color-whtte);
+}
+
+main section.obzor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    margin-left: 250px;
+    margin-right: 250px;
+    background-image: url(../images/stena.png);
+    height: 172px;
+    column-gap: 60px;
+    border-radius: 5px;
+}
+
+main section.obzor h2 {
+    color: var(--color-whtte);
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+main section.obzor nav ul {
+    display: flex;
+
+}
+
+main section.obzor nav ul li a {
+    text-decoration: none;
+    color: var(--color-whtte);
+    color: var(--color-whtte);
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 20px;
+    padding-right: 120px;
+}
+
+body>footer {
+    background-color: var(--color-grau);
+    height: 150px;
+    margin: 30px 250px 0 250px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr ;
+}
+
+
+body footer ul li {
+    list-style-type: none;
+    margin: 10px;
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+body footer ul li.tt {
+    font-family: var(--font-Montserrat-Bold);
+    font-weight: 900;
+    font-size: 24px;
+}
+
+body footer ul li.rr {
+    border: 1px solid var(--color-icons);
+    width: 126px;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+body footer ul li.rr a {
+    text-decoration: none;
+    color: var(--color-blac);
+    font-family: var(--font-Montserrat-Regular);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+body footer ul:nth-child(5) {
+    justify-self: end;
+}
