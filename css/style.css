@@ -40,6 +40,55 @@
     --font-Montserrat-Bold:"Montserrat-Bold";
 }
 
+header header svg#burg {
+    display: none;
+}
+
+.offset {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--color-blac);
+    z-index: 1000;
+}
+
+.offset nav ul {
+    padding-top: 60px;
+    display: grid;
+    justify-items: center;
+    list-style-type: none;
+    row-gap: 20px;
+}
+
+.offset ul a:hover {
+    color: var(--color-whtte);
+    transition: all 0.7s;
+}
+
+.offset nav ul a {
+    font-family: var(--font-Clah-Display);
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--color-oreng);
+}
+
+.offset nav {
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    padding: 20px;
+}
+
+.offset nav svg {
+    color: var(--color-whtte);
+    height: 100%;
+    justify-self: end;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
 header header {
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
@@ -50,7 +99,8 @@ header header {
 header header div.logo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
+    column-gap: 40px;
+    align-items: center;
 }
 
 header header div.logo span {
@@ -79,6 +129,17 @@ header header nav ul li a {
     font-family: var(--font-Montserrat-Regular);
     font-weight: 400;
     font-size: 14px;
+}
+
+header header nav ul li a:hover {
+     color: var(--color-oreng);
+     transition: all 0.7s;
+}
+
+header header article span:hover {
+    color: var(--color-oreng);
+    transition: all 0.7s;
+    cursor: pointer;
 }
 
 header header div {
@@ -265,17 +326,16 @@ main section.skidki {
     padding-right: 250px;
     padding-top: 30px;
     column-gap: 20px;
+    
 }
 
 main section.skidki div.mahina {
     background-image: url(../images/featured\ 1.png);
     height: 170px;
     border-radius: 5px;
-    display: flex;
 }
 
 main section.skidki div.mahina h2 {
-    display: grid;
     text-align: center;
     color: var(--color-whtte);
     padding-top: 34px;
@@ -453,4 +513,148 @@ body footer ul li.rr a {
 
 body footer ul:nth-child(5) {
     justify-self: end;
+}
+
+@media screen and (max-width: 390px) {
+    header header {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    header header svg#burg {
+        display: block;
+        grid-column: 2/3;
+        justify-self: end;
+    }
+    header header div.logo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+        align-items: center;
+        grid-row: 1/2;
+    }
+    header header .logo span {
+        width: 100%;
+    }
+    header header nav {
+        display: none;
+        padding: 0;
+    }
+
+    body>.offset nav ul li a {
+        font-family: var(--font-Montserrat-Regular);
+        font-weight: 400;
+        font-size: 14px;
+    }
+    body header header div{
+        display: none;
+    }
+    body header {
+        padding: 5px 5px;
+    }
+    header footer p,  header footer div.obrat{
+        display: none;
+    }
+    header footer {
+        padding: 0;
+        grid-template-columns: 1fr;
+    }
+    header footer div.poisk {
+        padding-top: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+    }
+    main section.slider {
+        display: none;
+    }
+
+    main div h3 {
+        margin-top: 30px;
+        margin-left: 5px;
+        padding: 0;
+    }
+
+    main section.prodaja {
+        display: grid;
+        padding: 0;
+        grid-template-columns: repeat(2, 2fr);
+        row-gap: 10px;
+        padding-top: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    main section.skidki {
+        padding: 0;
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        row-gap: 60px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    main section.skidki div article h2{
+        position: relative;
+        top: 170px;
+        right: 290px;
+        color: var(--color-blac);
+        width: 300%;
+    }
+    
+    main section.skidki div.mahina {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    main section.skidki div.mahina img {
+    position: relative;
+    bottom: 115px;
+    justify-self: center;
+    }
+
+    main section.skidki div.mahina h2 {
+        position: relative;
+        top: 135px;
+        color: var(--color-blac);
+    }
+
+    main section.skidki div.mahina p {
+        display: none;
+    }
+
+    main section.skidki div article p, main section.skidki div article span {
+        display: none;
+    }
+
+    main section.news {
+        padding: 0;
+    }
+
+    footer {
+        column-gap: 90px;
+    }
+
+    footer ul:nth-child(1) {
+        position: relative;
+        right: 250px;
+    }
+
+    footer ul:nth-child(2) {
+        position: relative;
+        right: 250px;
+    }
+
+    footer ul:nth-child(3) {
+        display: none;
+    }
+
+    footer ul:nth-child(4) {
+        display: none;
+    }
+
+    footer ul:nth-child(5) {
+        display: none;
+    }
+
 }
