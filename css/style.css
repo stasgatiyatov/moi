@@ -192,57 +192,56 @@ header footer div.obrat {
     justify-self: end;
 }
 
-section.slider {
-    margin-top: 30px; 
-    background-image: url(../images/fon-black-figury-linii-ugly-fon-chiornyi-lines\ 1.jpg);
+main section.slider {
+    padding: 0 250px;
+    margin-bottom: -150px;
+}
+
+main section.slider div.zaebalotwo img {
+    width: 100%;
+    height: 262px;
+    object-fit: cover;
+    display: none;
     border-radius: 5px;
-    height: 262px; 
-    margin-left: 250px;
-    margin-right: 250px;
-    display: grid;
 }
 
-section.slider img {
-    position: relative;
-    bottom: 220px;
-    left: 400px;
+main section.slider div.zaebalotwo img.active {
+    display: block;
 }
 
-section.slider h1 {
+main section.slider div.textslider {
     color: var(--color-whtte);
+    position: relative;
+    bottom: 180px;
+    left: 210px;
+}
+
+main section.slider div.textslider h1 {
     font-family: "BebasNeue-Regular";
     font-weight: 400;
     font-size: 40px;
-
 }
 
-section.slider h2 {
-    color: var(--color-whtte);
+main section.slider div.textslider h2 {
     font-family: "BebasNeue-Regular";
     font-weight: 400;
     font-size: 24px;
 }
 
-section.slider p {
-    color: var(--color-whtte);
+main section.slider div.textslider p {
     font-family: "BebasNeue-Regular";
     font-weight: 400;
     font-size: 16px;
 }
 
-section.slider div {
-    padding-top: 60px;
-    padding-left: 210px;
+main section.slider div.tudatwo {
+    display: flex;
+    column-gap: 34px;
+    position: relative;
+    left: 1250px;
+    bottom: 190px;
 }
 
-section.slider div.tuda {
-    display: grid;
-    grid-template-columns: repeat(2, 20px);
-    column-gap: 25px;
-    justify-self: end;
-    padding-right: 12px;
-    padding-top: 0.01px;
-}
 
 main div h3 {
     padding-top: 30px;
@@ -588,7 +587,7 @@ body footer ul:nth-child(5) {
         padding: 0;
         padding-top: 30px;
         display: grid;
-        grid-template-columns: repeat(1, 2fr);
+        grid-template-columns: 380px;
         row-gap: 60px;
         padding-left: 5px;
         padding-right: 5px;
@@ -604,7 +603,7 @@ body footer ul:nth-child(5) {
     
     main section.skidki div.mahina {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 390px;
     }
 
     main section.skidki div.mahina img {
@@ -617,6 +616,7 @@ body footer ul:nth-child(5) {
         position: relative;
         top: 135px;
         color: var(--color-blac);
+        width: 80%;
     }
 
     main section.skidki div.mahina p {
@@ -627,23 +627,26 @@ body footer ul:nth-child(5) {
         display: none;
     }
 
-    main section.news {
-        padding: 0;
-    }
 
     footer {
         column-gap: 90px;
     }
 
-    footer ul:nth-child(1) {
-        position: relative;
-        right: 250px;
+    body>footer {
+        margin-top: 480px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    footer ul:nth-child(2) {
+    /* footer ul:nth-child(1) {
         position: relative;
         right: 250px;
-    }
+    } */
+
+    /* footer ul:nth-child(2) {
+        position: relative;
+        right: 250px;
+    } */
 
     footer ul:nth-child(3) {
         display: none;
@@ -656,5 +659,38 @@ body footer ul:nth-child(5) {
     footer ul:nth-child(5) {
         display: none;
     }
+    main section.news {
+        display: none;
+        margin: 0;
+    }
+    main section.obzor {
+        margin-top: 110px;
+        padding: 0;
+        grid-template-columns: 390px;
+        margin-right: 0;
+        margin-left: 0;
+        background-image: none;
+        justify-items: center;
+        row-gap: 15px;
+    }
 
+    main section.obzor h2 {
+        padding: 0;
+        color: var(--color-blac);
+        justify-self: start;
+    }
+
+    main section.obzor nav ul {
+        display: block;
+    }
+    main section.obzor nav ul li a {
+        color: var(--color-blac);
+        padding: 0;
+    }
+
+    main section.obzor nav ul li img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }

@@ -9,6 +9,7 @@ const burger = () => {
     close.addEventListener('click', () => {
         off.style.display = 'none'
     })
+    console.log(btn)
 }
 
 burger()
@@ -19,6 +20,8 @@ const crest = () => {
     tru.addEventListener('click', () => {
         row.style.display = 'none'
     })
+    
 }
 
 crest()
+
