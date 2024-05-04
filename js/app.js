@@ -4,12 +4,10 @@ const burger = () => {
     const close = document.querySelector('.offset nav svg')
     btn.addEventListener('click', () => {
         off.style.display = 'block'
-        console.log(btn)
     })
     close.addEventListener('click', () => {
         off.style.display = 'none'
     })
-    console.log(btn)
 }
 
 burger()
@@ -25,3 +23,25 @@ const crest = () => {
 
 crest()
 
+const sliderImage = document.querySelector("main section.slider div.zaebalotwo img");
+const leftButton = document.querySelector("main section.slider div.tudatwo #levo");
+const rightButton = document.querySelector("main section.slider div.tudatwo #pravo");
+const sliderText = document.querySelector("main section.slider div.textslider ");
+
+let currentImageIndex = 0;
+const images = ["images/slid1.jpg", "images/slid2.jpg", "images/slid3.jpg"];
+const texts = ["black fridayСкидки почти на все Только с 17 по 4  Успей купить подарки близким"];
+
+function changeImage(direction) {
+    if (direction === "levo") {
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    } else if (direction === "pravo") {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+    }
+
+    sliderImage.src = images[currentImageIndex];
+    sliderText.textContent = texts[currentImageIndex];
+}
+
+leftButton.addEventListener("click", () => changeImage("levo"));
+rightButton.addEventListener("click", () => changeImage("pravo"));

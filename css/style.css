@@ -201,13 +201,9 @@ main section.slider div.zaebalotwo img {
     width: 100%;
     height: 262px;
     object-fit: cover;
-    display: none;
     border-radius: 5px;
 }
 
-main section.slider div.zaebalotwo img.active {
-    display: block;
-}
 
 main section.slider div.textslider {
     color: var(--color-whtte);
@@ -456,7 +452,6 @@ main section.obzor h2 {
 
 main section.obzor nav ul {
     display: flex;
-
 }
 
 main section.obzor nav ul li a {
