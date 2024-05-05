@@ -26,11 +26,11 @@ crest()
 const sliderImage = document.querySelector("main section.slider div.zaebalotwo img");
 const leftButton = document.querySelector("main section.slider div.tudatwo #levo");
 const rightButton = document.querySelector("main section.slider div.tudatwo #pravo");
-const sliderText = document.querySelector("main section.slider div.textslider ");
+const sliderText = document.querySelector("main section.slider div.textslider span ");
 
 let currentImageIndex = 0;
 const images = ["images/slid1.jpg", "images/slid2.jpg", "images/slid3.jpg"];
-const texts = ["black fridayСкидки почти на все Только с 17 по 4  Успей купить подарки близким"];
+const texts = ["black friday Скидки почти на все Только с 17 по 4 Успей купить подарки близким", "black friday Скидки почти на все Только с 17 по 4 Успей купить подарки близким","black friday Скидки почти на все Только с 17 по 4 Успей купить подарки близким"];
 
 function changeImage(direction) {
     if (direction === "levo") {
