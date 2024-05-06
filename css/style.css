@@ -216,7 +216,7 @@ main section.slider div.textslider span  {
     width: 45%;
     padding-left: 100px;
     padding-bottom: 30px;
-    font-family: var("Alike-Regular");
+    font-family: var(--font-Alike-Regular);
     font-weight: 400;
     font-size: 24px;
 }
@@ -293,7 +293,7 @@ main section.prodaja article:nth-child(6) {
 main section.prodaja article p {
     font-family: var(--font-Montserrat-Regular);
     font-weight: 400;
-    font-style: 16px;
+    font-size: 16px;
 }
 
 main section.prodaja article svg {
